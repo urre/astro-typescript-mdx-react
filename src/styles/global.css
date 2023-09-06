@@ -1,4 +1,5 @@
 :root {
+  --flow-space: 1rem;
   --base-font-size: 16px;
   --base-line-height: 1.5;
   --font-scale-factor: 1.414; /* Augmented fourth scale */
