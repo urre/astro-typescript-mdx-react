@@ -1,0 +1,66 @@
+:root {
+  --base-font-size: 16px;
+  --base-line-height: 1.5;
+  --font-scale-factor: 1.414; /* Augmented fourth scale */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: calc(var(--base-line-height) * 1.5);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:where(a) {
+  color: inherit;
+  text-underline-offset: 0.2ex;
+}
+
+main > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img,
+picture,
+svg,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+p,
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+  line-height: calc(var(--base-line-height) * 1.25);
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@example/blog",
+  "type": "module",
+  "version": "0.3.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev --host --open",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "0.19.7",
+    "@astrojs/react": "2.3.2",
+    "astro": "2.10.15",
+    "mdast-util-to-string": "3.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rollup": "3.28.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@typescript/twoslash": "3.2.4",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
+  }
+}
